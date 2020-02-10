@@ -24,6 +24,14 @@ function generateName() {
             Math.floor(Math.random() * 10) +
             parseInt(Math.floor(Math.random() * 9) + 1);
           document.getElementById("name").innerText = result;
+          document.getElementById(
+            "adjectiveDefinition"
+          ).innerText = resultAdjectives;
+          document.getElementById("adjectiveDefinition").href =
+            "https://en.wiktionary.org/wiki/" + resultAdjectives.toLowerCase();
+          document.getElementById("nounDefinition").innerText = resultNouns;
+          document.getElementById("nounDefinition").href =
+            "https://en.wiktionary.org/wiki/" + resultNouns.toLowerCase();
         });
     });
 }
