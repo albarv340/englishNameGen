@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Name Generator</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+  </head>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+    }
+    div {
+      margin-top: 40vh;
+    }
+    button {
+      position: absolute;
+      top: 50vh;
+      left: 48vw;
+    }
+  </style>
+  <body>
+    <div>
+      <h1 id="name"></h1>
+      <button onclick="generateName()">Click</button>
+      <script src="name-gen.js"></script>
+    </div>
+  </body>
+</html>
