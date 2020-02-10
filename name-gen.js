@@ -21,8 +21,8 @@ function generateName() {
           const result =
             resultAdjectives +
             resultNouns +
-            Math.floor(Math.random() * 9) +
-            Math.floor(Math.random() * 9);
+            Math.floor(Math.random() * 10) +
+            parseInt(Math.floor(Math.random() * 9) + 1);
           document.getElementById("name").innerText = result;
         });
     });
